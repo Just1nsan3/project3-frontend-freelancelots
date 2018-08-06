@@ -29,6 +29,7 @@ class Login extends Component {
 		handleChange = (e) => {
 			this.setState({[e.target.name]: e.target.value});
 		}
+		
 		render(){
 			return(
 				<form onSubmit={this.handleSubmit}>
