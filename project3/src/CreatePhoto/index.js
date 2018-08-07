@@ -16,7 +16,7 @@ class CreatePhoto extends Component {
 
 	render(){
 		return (
-			<form onSubmit={this.props.addPhoto.bind(this, this.state)}>
+			<form onSubmit={this.props.addPhoto.bind(null, this.state)}>
         <label>
           Photo:
           <input type="text" name="title" onChange={this.updatePhoto}/>
