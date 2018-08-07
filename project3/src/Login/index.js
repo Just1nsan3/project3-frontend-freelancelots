@@ -17,14 +17,14 @@ class Login extends Component {
 			header: {
 				'Content-Type': 'application/json'
 			}
-		})
+		});
 
 		const parsedResponse = await loginResponse.json();
 
-		if(parsedResponse.data === 'login successful'){
+		if(parsedResponse.data === 'login successful')
 			this.props.history.push('/photos');
 
-		}
+		
 	}
 		handleChange = (e) => {
 			this.setState({[e.target.name]: e.target.value});
