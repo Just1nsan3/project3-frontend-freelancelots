@@ -1,4 +1,4 @@
-import React, { Component } from 'react':
+import React, { Component } from 'react';
 
 class CreatePhoto extends Component {
 	constructor(){
@@ -16,7 +16,7 @@ class CreatePhoto extends Component {
 
 	render(){
 		return (
-			<form onSubmit={tis.props.addPhoto.bind(this, this.state)}>
+			<form onSubmit={this.props.addPhoto.bind(this, this.state)}>
         <label>
           Photo:
           <input type="text" name="title" onChange={this.updatePhoto}/>

@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
-import {Route, Switch} from 'react-router-dom'
-import logo from './logo.svg';
+import PhotoContainer from './PhotoContainer'
 import Login from './Login';
 // import Modal from './Modal';
 import './index.css';
+import {Route, Switch} from 'react-router-dom'
+import './App.css';
+import Header from './Header'
+
 
 
 const My404 = () => {
@@ -18,9 +21,11 @@ const App = () => {
   return(
     <main>
     <Switch>
-    <button>
     <Route exact path="/" component = {Login}/>
-    </button>
+        <Route exact path="/" component = {Login}/>
+        <Route exact path="/photos" component={ PhotoContainer } />
+        <Route component={My404} />
+
     </Switch>
     </main>
   )
