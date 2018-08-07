@@ -4,3 +4,10 @@ body {
   font-family: sans-serif;
   background-color: lightblue;
 }
+.login{
+  margin: 0;
+  padding: 0;
+  background-color: silver;
+  display: flex;
+  justify-content: flex-end;
+}
