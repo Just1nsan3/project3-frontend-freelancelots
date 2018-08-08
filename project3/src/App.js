@@ -23,7 +23,6 @@ const App = () => {
     <div>
     <h1>Login</h1>
     <Switch>
-    <Route exact path="/" component = {Login}/>
         <Route exact path="/" component = {Login}/>
         <Route exact path="/photos" component={ PhotoContainer } />
         <Route component={My404} />

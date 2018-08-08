@@ -5,30 +5,38 @@ class CreatePhoto extends Component {
 		super();
 
 		this.state = {
-			username: String,
-			tag: String
+			tag: "",
+      url: "", 
+      description: ""
 		}
 	}
 	updatePhoto = (e) => {
 
 		this.setState({[e.currentTarget.name]: e.currentTarget.value});
 	}
+  // creTE HANDLE SUBMIT
 
 	render(){
 		return (
-			
-       <div>
+
+
+			<form>
         <label>
           Photo:
-          <input type="text" name="title" placeholder="Photo Url" onChange={this.updatePhoto}/>
+          <input type="text" name="url" placeholder="PhotoURL" onChange={this.updatePhoto}/>
         </label>
         <label>
           Description:
           <input type="text" name="description" onChange={this.updatePhoto}/>
         </label>
-        <input type='Submit'/>
-      
-      </div>
+        <label>
+          Tag:
+          <input type="text" name="tag" onChange={this.updatePhoto}/>
+        </label>
+        <input type='submit'/>
+      </form>
+
+
 		)
 	}
 }
