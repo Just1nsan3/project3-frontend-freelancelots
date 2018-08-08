@@ -24,18 +24,20 @@ class Login extends Component {
 
 		if(parsedResponse.data === 'login successful') {
 			this.props.history.push('/photos');
-			// call set username function -- this function will be passed in from props and should set a username in App 
+			// call set username function -- this function will be passed in from props and should set a username in App
 			// that way the entire app will know what user is logged in and also this can be apssed from App down into PhotoContainer
 		}
 
-		
+
 	}
 		handleChange = (e) => {
 			this.setState({[e.target.name]: e.target.value});
 		}
-		
+
 		render(){
 			return(
+				<div>
+					<h1>Login</h1>
 				<form className="login" onSubmit={this.handleSubmit}>
 					<label>
 						Username:
@@ -46,8 +48,13 @@ class Login extends Component {
 						<input type='password' name='password' onChange={this.handleChange} />
 					</label>
 						<input type='submit' value='Login' />
+						<label>
+						Register:
+						<input type='password' name='password' onChange={this.handleChange} />
+					</label>
+						<input type='submit' value='Login' />
 				</form>
-
+			</div>
 				)
 		}
 }

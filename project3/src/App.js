@@ -21,7 +21,6 @@ const App = () => {
   return(
     <main>
     <div>
-    <h1>Login</h1>
     <Switch>
         <Route exact path="/" component = {Login}/>
         <Route exact path="/photos" component={ PhotoContainer } />
