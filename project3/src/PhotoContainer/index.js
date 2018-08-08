@@ -140,7 +140,7 @@ class PhotoContainer extends Component {
     return (
       <div>
         <Photos photos={this.state.photos} deletePhoto={this.deletePhoto} showModal={this.showModal}/>
-        <CreatePhoto addphoto={this.addPhoto} />
+        <CreatePhoto addPhoto={this.addPhoto} />
 
         {this.state.showEdit ? <EditPhoto closeAndEdit={this.closeAndEdit} handleFormChange={this.handleFormChange} photoToEdit={this.state.photoToEdit}/> : null}
       </div>
