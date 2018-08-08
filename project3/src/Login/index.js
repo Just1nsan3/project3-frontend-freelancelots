@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import LocationContainer from '../LocationContainer'
 
 class Login extends Component {
 	constructor(){
@@ -54,6 +55,7 @@ class Login extends Component {
 					</label>
 						<input type='submit' value='Login' />
 				</form>
+				<LocationContainer />
 			</div>
 				)
 		}

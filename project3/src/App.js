@@ -6,6 +6,9 @@ import './index.css';
 import {Route, Switch} from 'react-router-dom'
 import './App.css';
 import Header from './Header'
+import Freelancer from './Freelancer'
+import LocationContainer from './LocationContainer'
+import MapContainer from './MapContainer'
 
 
 
@@ -24,11 +27,15 @@ const App = () => {
     <Switch>
         <Route exact path="/" component = {Login}/>
         <Route exact path="/photos" component={ PhotoContainer } />
+        <Route exact path="/freelancer" component={ Freelancer } />
+        <Route exact path="/location" component={ LocationContainer } />
         <Route component={My404} />
+        <LocationContainer />
 
     </Switch>
     </div>
     </main>
   )
 }
+
 export default App;

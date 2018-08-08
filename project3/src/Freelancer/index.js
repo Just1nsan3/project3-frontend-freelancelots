@@ -6,9 +6,11 @@ class Freelancer extends Component {
 
     this.state = {
       name: "",
+      password: "",
       specialty: "",
       location: "",
-      contact: ""
+      contact: "",
+      showregister: false,
 
     }
   }
