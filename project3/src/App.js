@@ -20,6 +20,8 @@ const My404 = () => {
 const App = () => {
   return(
     <main>
+    <div>
+    <h1>Login</h1>
     <Switch>
     <Route exact path="/" component = {Login}/>
         <Route exact path="/" component = {Login}/>
@@ -27,6 +29,7 @@ const App = () => {
         <Route component={My404} />
 
     </Switch>
+    </div>
     </main>
   )
 }

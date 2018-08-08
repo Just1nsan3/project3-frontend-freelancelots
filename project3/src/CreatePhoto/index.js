@@ -16,18 +16,19 @@ class CreatePhoto extends Component {
 
 	render(){
 		return (
-			<form onSubmit={this.props.addPhoto.bind(null, this.state)}>
+			
+       <div>
         <label>
           Photo:
-          <input type="text" name="title" onChange={this.updatePhoto}/>
+          <input type="text" name="title" placeholder="Photo Url" onChange={this.updatePhoto}/>
         </label>
         <label>
           Description:
           <input type="text" name="description" onChange={this.updatePhoto}/>
         </label>
         <input type='Submit'/>
-      </form>
-
+      
+      </div>
 		)
 	}
 }
