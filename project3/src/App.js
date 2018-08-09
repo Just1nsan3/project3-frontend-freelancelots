@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import PhotoContainer from './PhotoContainer'
 import Login from './Login';
-// import Modal from './Modal';
-import './index.css';
-import {Route, Switch} from 'react-router-dom'
-import './App.css';
+import Freelancer from './Freelancer';
+import Modal from './Modal';
 import Header from './Header'
-import Freelancer from './Freelancer'
-import LocationContainer from './LocationContainer'
-import MapContainer from './MapContainer'
-
+import {Route, Switch} from 'react-router-dom'
+import './index.css';
+import './App.css';
 
 
 const My404 = () => {
@@ -20,6 +17,7 @@ const My404 = () => {
   )
 }
 
+<<<<<<< HEAD
 const App = () => {
   return(
     <main>
@@ -31,11 +29,33 @@ const App = () => {
         <Route exact path="/location" component={ LocationContainer } />
         <Route component={My404} />
         
+=======
+>>>>>>> f760630dfacdfefb159dbdaee8ec69d438f39d0f
 
-    </Switch>
-    </div>
-    </main>
-  )
+class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+    }
+  }
+
+  render(){
+    return((
+     
+      <div>
+        <Switch>
+          <Header/>
+          <Route exact path="/" component = {Login}/>
+          <Route exact path="/photos" component={ PhotoContainer } />
+          <Route exact path="/freelancer" component={ Freelancer } />
+          <Route exact path="/location" component={ LocationContainer } />
+          <Route component={My404} />
+          <LocationContainer />
+
+        </Switch>
+      </div>
+    )
+  }
 }
 
 export default App;
