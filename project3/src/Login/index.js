@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Search from '../Search'
-import LocationContainer from '../LocationContainer'
 
 class Login extends Component {
 	constructor(){
@@ -25,10 +23,18 @@ class Login extends Component {
 		const parsedResponse = await loginResponse.json();
 
 		if(parsedResponse.data === 'login successful') {
-			this.props.history.push('/photos');
-			// call set username function -- this function will be passed in from props and should set a username in App
-			// that way the entire app will know what user is logged in and also this can be apssed from App down into PhotoContainer
+			this.props.hideLoginRegister();
+			// call a username function that you will write --
+			// this function will be passed in from props from App throught header
+			// and should set a username and logged in boolean in state in App component
+			// that way the entire app will know what user is logged in and also this can be apssed from App down into Admin
+
+			// you will need to pass this info about who is looged in from app down into admin
+
+
 		}
+
+
 
 
 	}
@@ -39,7 +45,7 @@ class Login extends Component {
 		render(){
 			return(
 				<div>
-					
+
 				<form className="login" onSubmit={this.handleSubmit}>
 					<label>
 						Username:
@@ -59,11 +65,9 @@ class Login extends Component {
 						Password:
 						<input type='password' name='password' onChange={this.handleChange} />
 					</label>
-					
+
 						<input type='submit' value='Register' />
 				</form>
-				<LocationContainer />
-				<Search />
 			</div>
 				)
 		}

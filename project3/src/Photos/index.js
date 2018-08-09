@@ -15,10 +15,10 @@ const Photos = (props) => {
 
   return (
   	<div>
-  	<h1>Photo Container</h1>
-    <ul>
-      {photoList}
-    </ul>
+  	<h1>Photo Gallery for this freelancer</h1>
+      <ul>
+        {photoList}
+      </ul>
     </div>
     )
 
@@ -27,6 +27,3 @@ const Photos = (props) => {
 
 
 export default Photos;
-
-
-

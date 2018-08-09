@@ -17,9 +17,11 @@ class LocationContainer extends Component {
   render() {
     return (
         <div className="locationContainer">
-          <MapContainer containerElement={<div style={{ height: `400px` }} />}
-            mapElement={<div style={{ height: `100%` }} />}/>
-
+          <MapContainer
+            freelancerResults={this.props.freelancerResults}
+            containerElement={<div style={{ height: `400px` }} />}
+            mapElement={<div style={{ height: `100%` }} />}
+          />
         </div>
     );
   }
