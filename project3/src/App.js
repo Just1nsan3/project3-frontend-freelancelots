@@ -19,20 +19,7 @@ const My404 = () => {
   )
 }
 
-<<<<<<< HEAD
-const App = () => {
-  return(
-    <main>
-    <div>
-    <Switch>
-        <Route exact path="/" component = {Login}/>
-        <Route exact path="/photos" component={ PhotoContainer } />
-        <Route exact path="/freelancer" component={ Freelancer } />
-        <Route exact path="/location" component={ LocationContainer } />
-        <Route component={My404} />
-        
-=======
->>>>>>> f760630dfacdfefb159dbdaee8ec69d438f39d0f
+
 
 class App extends Component {
   constructor(){
@@ -44,17 +31,13 @@ class App extends Component {
 
   render(){
     return(
-     
       <div>
+        <Header/>
         <Switch>
-          <Header/>
-          <Route component={My404} />
-          <Route exact path="/" component = {Login}/>
-          <Route exact path="/" component = {Search}/>
+          <Route exact path="/" component={Search} />
           <Route exact path="/photos" component={ PhotoContainer } />
           <Route exact path="/freelancer" component={ Freelancer } />
-          <Route exact path="/location" component={ LocationContainer } />
-          <LocationContainer />
+          <Route component={My404} />
         </Switch>
       </div>
     )

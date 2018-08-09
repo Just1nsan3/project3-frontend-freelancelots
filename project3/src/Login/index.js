@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Search from '../Search'
-import LocationContainer from '../LocationContainer'
 
 class Login extends Component {
 	constructor(){
@@ -39,7 +37,7 @@ class Login extends Component {
 		render(){
 			return(
 				<div>
-					
+
 				<form className="login" onSubmit={this.handleSubmit}>
 					<label>
 						Username:
@@ -59,11 +57,9 @@ class Login extends Component {
 						Password:
 						<input type='password' name='password' onChange={this.handleChange} />
 					</label>
-					
+
 						<input type='submit' value='Register' />
 				</form>
-				<LocationContainer />
-				<Search />
 			</div>
 				)
 		}
