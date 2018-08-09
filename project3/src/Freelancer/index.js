@@ -18,9 +18,9 @@ class Freelancer extends Component {
 
 		this.setState({[e.currentTarget.name]: e.currentTarget.value});
 	}
+  // TODO: make this work like login
   render(){
     return (
-
 
       <form>
         <label>

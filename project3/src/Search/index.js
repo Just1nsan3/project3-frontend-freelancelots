@@ -1,20 +1,28 @@
 import React, { Component } from 'react'
 import LocationContainer from '../LocationContainer'
-import Login from '../Login'
+
 
 class Search extends Component{
   constructor(){
     super();
     this.state = {
       specialty: "",
-      location: ""
+      location: "",
+      freelancerResults: []
     }
   }
+
+  //functions/methods:
+  // 1. hit back end, get info about freelancers (uincluding location), and store it in setState
+
+  // 2.  when a user clicks on a serarch result, it should call setFeelancer from props
+
+
   render(){
     return(
       <div>
-        <Login />
-        <LocationContainer />
+
+        <LocationContainer freelancerResults={this.state.freelancerResults}/>
         <h1>What are you looking for</h1>
         <label>
           <input type="text" name="specialty" placeholder="specialty" />

@@ -4,13 +4,16 @@ import {withGoogleMap, GoogleMap, Marker} from 'react-google-maps';
 
 
 const MapContainer = (withGoogleMap((props) =>
+  // map over props.freelancerResults to create an array of <Marker />s
+  // include that below where you currently have just the one marker
 	<GoogleMap
     center= {{lat:41.881832, lng: -87.623177}}
     zoom= {10}
   >
 
-      {props.isMarkerShown && <Marker position={{lat:41.881832, lng: -87.623177}}/>}
-    </GoogleMap>
+      <Marker position={{lat:41.881832, lng: -87.623177}}/>
+
+  </GoogleMap>
 
 ))
 
