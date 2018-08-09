@@ -30,7 +30,7 @@ const App = () => {
         <Route exact path="/freelancer" component={ Freelancer } />
         <Route exact path="/location" component={ LocationContainer } />
         <Route component={My404} />
-        <LocationContainer />
+        
 
     </Switch>
     </div>
