@@ -19,28 +19,9 @@ const My404 = () => {
   )
 }
 
-<<<<<<< HEAD
-const App = () => {
-  return(
-    <main>
-    <div>
-    <Switch>
-        <Route exact path="/" component = {Login}/>
-        <Route exact path="/photos" component={ PhotoContainer } />
-        <Route exact path="/freelancer" component={ Freelancer } />
-        <Route exact path="/location" component={ LocationContainer } />
-        <Route component={My404} />
-        
-=======
->>>>>>> f760630dfacdfefb159dbdaee8ec69d438f39d0f
 
 class App extends Component {
-  constructor(){
-    super();
-    this.state = {
-
-    }
-  }
+  
 
   render(){
     return(
