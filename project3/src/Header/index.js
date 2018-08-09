@@ -9,8 +9,7 @@ const Header = () => {
     <h1>Knigts of Lancelot</h1>
 			<ul>
 				<li><Link to='/'>Login</Link></li>
-        
-				<li><Link to='/photos'>Photos</Link></li>
+        <li><Link to='/photos'>Photos</Link></li>
 
 			</ul>
 		</header>

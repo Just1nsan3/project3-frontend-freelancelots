@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Search from '../Search'
 import LocationContainer from '../LocationContainer'
 
 class Login extends Component {
@@ -62,6 +63,7 @@ class Login extends Component {
 						<input type='submit' value='Register' />
 				</form>
 				<LocationContainer />
+				<Search />
 			</div>
 				)
 		}

@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import PhotoContainer from './PhotoContainer'
-import Login from './Login';
-import Freelancer from './Freelancer';
-import Modal from './Modal';
-import Header from './Header'
 import {Route, Switch} from 'react-router-dom'
+import LocationContainer from './LocationContainer'
+import PhotoContainer from './PhotoContainer'
+import Freelancer from './Freelancer';
+import Header from './Header'
+import Search from './Search';
+import Login from './Login';
+import Modal from './Modal';
 import './index.css';
 import './App.css';
 
@@ -22,22 +24,23 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
+
     }
   }
 
   render(){
-    return((
+    return(
      
       <div>
         <Switch>
           <Header/>
+          <Route component={My404} />
           <Route exact path="/" component = {Login}/>
+          <Route exact path="/" component = {Search}/>
           <Route exact path="/photos" component={ PhotoContainer } />
           <Route exact path="/freelancer" component={ Freelancer } />
           <Route exact path="/location" component={ LocationContainer } />
-          <Route component={My404} />
           <LocationContainer />
-
         </Switch>
       </div>
     )
