@@ -9,7 +9,6 @@ import './index.css';
 import './App.css';
 
 
-
 const My404 = () => {
   return(
     <div>
@@ -18,30 +17,31 @@ const My404 = () => {
   )
 }
 
+
 class App extends Component {
   constructor(){
     super();
     this.state = {
-
     }
   }
-    render(){
-      return(
-        
-        <div>
-        <Header/>
 
+  render(){
+    return((
+     
+      <div>
         <Switch>
-          <Route exact path="/" component={ Login } />
-          <Route exact path="/" component={ Freelancer } />
+          <Header/>
+          <Route exact path="/" component = {Login}/>
           <Route exact path="/photos" component={ PhotoContainer } />
+          <Route exact path="/freelancer" component={ Freelancer } />
+          <Route exact path="/location" component={ LocationContainer } />
           <Route component={My404} />
+          <LocationContainer />
 
         </Switch>
-        </div>
-        
-      )
-    }
-  
+      </div>
+    )
+  }
 }
+
 export default App;
