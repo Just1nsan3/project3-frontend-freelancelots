@@ -11,7 +11,7 @@ class Login extends Component {
 	handleSubmit = async (e) => {
 		e.preventDefault();
 
-		const loginResponse = await fetch('https://git.heroku.com/young-citadel-12186.git', {
+		const loginResponse = await fetch('https://young-citadel-12186.herokuapp.com/', {
 			method: 'POST',
 			credentials: 'include',
 			body: JSON.stringify(this.state),
