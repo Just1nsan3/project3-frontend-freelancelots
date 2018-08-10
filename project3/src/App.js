@@ -19,11 +19,7 @@ const My404 = () => {
   )
 }
 
-<<<<<<< HEAD
 
-class App extends Component {
-  
-=======
 
 
 class App extends Component {
@@ -35,7 +31,7 @@ class App extends Component {
       loggedIn: false
     }
   }
->>>>>>> 582c007c199f5dcb3fc8cd2fd32d25407cca88a7
+
 
 
   // functions needed
