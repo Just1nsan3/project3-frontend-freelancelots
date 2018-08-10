@@ -31,7 +31,7 @@ class PhotoContainer extends Component {
   }
   getPhotos = async () => {
 
-    const photos = await fetch('http://localhost:9000/api/v1/photos');
+    const photos = await fetch(' https://git.heroku.com/young-citadel-12186.git');
     const parsedPhotos = photos.json();
 
     return parsedPhotos
@@ -41,7 +41,7 @@ class PhotoContainer extends Component {
     e.preventDefault();
 
     try {
-      const createPhoto = await fetch('http://localhost:9000/api/v1/photos', {
+      const createPhoto = await fetch(' https://git.heroku.com/young-citadel-12186.git', {
         method: 'POST',
         credintials: 'include',
         body: JSON.stringify(photo),
@@ -64,7 +64,7 @@ class PhotoContainer extends Component {
 
     try {
 
-      const deletePhoto = await fetch('http://localhost:9000/api/v1/photos/' + id, {
+      const deletePhoto = await fetch(' https://git.heroku.com/young-citadel-12186.git' + id, {
         method: 'DELETE'
       });
 
@@ -94,7 +94,7 @@ class PhotoContainer extends Component {
 
      try {
 
-      const editPhoto = await fetch('http://localhost:9000/api/v1/photos/' + this.state.editPhotoId, {
+      const editPhoto = await fetch(' https://git.heroku.com/young-citadel-12186.git' + this.state.editPhotoId, {
         method: 'PUT',
         body: JSON.stringify(this.state.photoToEdit),
         headers: {
